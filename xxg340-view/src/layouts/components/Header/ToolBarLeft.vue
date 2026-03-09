@@ -1,0 +1,23 @@
+<template>
+	<div class="tool-bar-lf">
+		
+	</div>
+</template>
+
+<script setup>
+import { computed } from 'vue';
+import { GlobalStore } from '@/stores';
+import CollapseIcon from './components/CollapseIcon.vue';
+
+
+const globalStore = GlobalStore();
+const themeConfig = computed(() => globalStore.themeConfig);
+</script>
+
+<style scoped lang="scss">
+.tool-bar-lf {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+</style>
